@@ -78,8 +78,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.strictmode.visual=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    video.accelerate.hw=1 \
-    media.stagefright.enable-player=true \
+    video.accelerate.hw=1
+#    media.stagefright.enable-player=true \
     media.stagefright.enable-meta=false \
     media.stagefright.enable-scan=false \
     media.stagefright.enable-http=true \
@@ -103,7 +103,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm7x27
 
 PRODUCT_PACKAGES += \
-    libstagefrighthw \
     libmm-omxcore \
     libOmxCore
 
@@ -150,14 +149,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
     $(LOCAL_PATH)/chargemode/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle \
     $(LOCAL_PATH)/chargemode/chargerlogo:root/sbin/chargerlogo
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.themeId=TouchWiz \
-    persist.sys.themePackageName=com.thomassafca.theme.touchwiz.free
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/themes/com.thomassafca.theme.touchwiz.free.apk:system/app/com.thomassafca.theme.touchwiz.free.apk \
-    $(LOCAL_PATH)/prebuilt/themes/org.cerqueira.theme.Green.apk:system/app/org.cerqueira.theme.Green.apk
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
