@@ -30,7 +30,7 @@
 #define NO_ERROR 0
 #define GRALLOC_USAGE_PMEM_PRIVATE_ADSP GRALLOC_USAGE_PRIVATE_0
 #define MSM_COPY_HW 1
-#define HWA 1
+//#define HWA 1
 #ifdef HWA
 #include "qcom/display/libgralloc/gralloc_priv.h"
 #else
@@ -125,7 +125,7 @@ CameraHAL_CopyBuffers_Hw(int srcFd, int destFd,
     blit.req.flags       = 0;
     blit.req.alpha       = 0xff;
     blit.req.transp_mask = 0xffffffff;
-    blit.req.sharpening_strength = 64;  /* -127 <--> 127, default 64 */
+    //blit.req.sharpening_strength = 64;  /* -127 <--> 127, default 64 */
 
     blit.req.src.width     = w;
     blit.req.src.height    = h;
