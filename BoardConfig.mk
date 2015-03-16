@@ -19,6 +19,8 @@ endif
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p500/bluetooth
 
+TARGET_PROVIDES_INIT_RC := true
+
 # Disabling skia-gpu for now while GL isn't 100% functional.
 GECKO_CONFIGURE_ARGS := \
 	--with-arch=armv6 \
