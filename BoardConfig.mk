@@ -18,3 +18,12 @@ MINIGZIP                            := $(shell which lzma)
 endif
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p500/bluetooth
+
+# Disabling skia-gpu for now while GL isn't 100% functional.
+GECKO_CONFIGURE_ARGS := \
+	--with-arch=armv6 \
+	--disable-b2g-bt \
+	--disable-b2g-ril \
+	--disable-skia-gpu
+
+BOARD_GAIA_MAKE_FLAGS := NOFTU=1 NO_LOCK_SCREEN=1 # GAIA_MEMORY_PROFILE=low ?
