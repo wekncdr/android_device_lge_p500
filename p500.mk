@@ -54,7 +54,7 @@ $(call inherit-product, device/lge/msm7x27-common/device.mk)
 $(call inherit-product, vendor/lge/msm7x27-common/msm7x27-common-vendor-blobs.mk)
 
 # Overrides
-PRODUCT_NAME := fxos_p500
+PRODUCT_NAME := p500
 PRODUCT_DEVICE := p500
 PRODUCT_MODEL := LG-P500
 PRODUCT_MANUFACTURER := LGE
