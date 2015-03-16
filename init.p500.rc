@@ -1,9 +1,18 @@
 # inherit qcom init
 import init.qcom.rc
 
+import /init.b2g.rc
+
+on early-init
+    start ueventd
+
 on fs
     mount_all /fstab.p500
     swapon_all /fstab.p500
+
+    chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/updater
+    chmod 0755 /system/b2g/plugin-container
 
 on boot
     ## VIBRATOR

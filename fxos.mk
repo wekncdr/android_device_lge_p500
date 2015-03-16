@@ -7,7 +7,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 $(call inherit-product, vendor/cm/config/mini.mk)
 
 # Overrides
-PRODUCT_NAME := cm_p500
+PRODUCT_NAME := fxos_p500
 PRODUCT_BRAND := lge
 PRODUCT_DEVICE := p500
 PRODUCT_MODEL := LG-P500

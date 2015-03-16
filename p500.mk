@@ -48,21 +48,13 @@ PRODUCT_COPY_FILES += \
 #P500_SPEAKER_IN_CALL_FIX
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
-# Live wallpapers
-PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    VisualizationWallpapers \
-    librs_jni
-
 # Inherit products (Most specific first)
 $(call inherit-product, vendor/lge/p500/p500-vendor.mk)
 $(call inherit-product, device/lge/msm7x27-common/device.mk)
 $(call inherit-product, vendor/lge/msm7x27-common/msm7x27-common-vendor-blobs.mk)
 
 # Overrides
-PRODUCT_NAME := p500
+PRODUCT_NAME := fxos_p500
 PRODUCT_DEVICE := p500
 PRODUCT_MODEL := LG-P500
 PRODUCT_MANUFACTURER := LGE
